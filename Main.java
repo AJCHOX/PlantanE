@@ -7,7 +7,7 @@ public class Main {
 
 	public static void main(String[] args) {
 		Scanner teclado=new Scanner(System.in);
-		Boolean control =true ;
+		Boolean salida =true ;
 		
 		do {
 			System.out.println("-------MENU------");
@@ -15,7 +15,7 @@ public class Main {
 			System.out.println("<2>Nuevo diccionario");
 			System.out.println("<3>Dinero recaudado");
 			System.out.println("<0>Salir del programa");
-			System.out.println("\nIngrese opción: ");
+			System.out.println("\nIngrese opciÃ³n: ");
 			int opcion = teclado.nextInt();
 			
 			if (opcion== 1) {
@@ -49,13 +49,13 @@ public class Main {
 			}
 			else if(opcion==0) {
 				System.out.println("Hasta la proxima ^^");
-				control = false;
+				salida = false;
 			}else {
 				System.out.println("ERROR:Escoja una opcion posible");
 			}
 		}
 
-		  while (control);
+		  while (salida);
 	}
 
 }
